@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+background: #f1f2f6;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    margin: 20px 0;
+    opacity: 0.5;
+}
+.container{
+    width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-right: 150px;
+
+}
+.container .card{
+    width: fit-content;
+}
+.container .card .form{
+    background: white;
+    width: 470px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 20px 3px rgba(128, 128, 128, 0.266);
+}
+.container .card .form .input .in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px ;
+    border-radius: 5px;
+    border: 1px solid rgba(182, 182, 182, 0.698);
+    outline-color: #1878f3;
+}
+[type="submit"]{
+    background-color:#1878f3;
+    border: none;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 14px ;
+    border-radius: 5px;
+    font-size: 15px;
+    
+    cursor: pointer;
+}
+[type="submit"]:hover{
+    background: #3987ed;
+}
+.container .card .form .input a{
+    color: #1878f3;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+
+}
+ button{
+    background: #42b72a;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 13px 15px ;
+    margin-bottom: 14px ;
+    border-radius: 5px;
+    font-size: 15px;
+        width: fit-content;
+    cursor: pointer;
+    margin: auto;
+}
+button:hover{
+    background:#49cc2f;
+}
+.container .card span{
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+   text-align: center;
+   color: #222222;
+   position: relative;
+   top: 40px;
+}
+.container .card span a{
+   color: #000000;
+    font-weight: 600;
+    
+    
+}
+.container .text{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+.container .text h1{
+    font-size: 55px;
+    color: #1878f3;
+}
+.container .text p{
+    font-family:   sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+@media (max-width:1100px){
+    
+.container{
+   flex-direction: column;
+   margin-right: 0;
+}
+.container .text {
+    margin-left: 0;
+
+}
+.container .text p {
+    display: none;
+}
+.container .text h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
+}
+@media (max-width:600px){
+    
+.container{
+ scale: 0.8;
+ margin-bottom: 150px;
+}
+
+
+}
+@media (max-width:400px){
+    
+.container{
+ scale: 0.7;
+}
+
+
+}
+
+
+.input h4{
+    font-weight: 500;
+    font-size: 1.15em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #292727;
+}
+
+::placeholder{
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #989898;
+}
+.or{
+    position: relative;
+    font-size: 0.8em;
+    color: #8e8e8e;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    
+}
+.form .or::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 44%;
+    height: 1px;
+    background-color: #c6c6c6;
+}
+.form .or::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 44%;
+    height: 1px;
+    background-color: #c6c6c6;
+}
